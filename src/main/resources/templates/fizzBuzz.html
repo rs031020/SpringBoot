@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<title>FizzBuzz</title>
+</head>
+
+<body>
+	<h1>FizzBuzz</h1>
+	<!- controllerからのresultを受け取って表示 ->
+		<ul th:each="list : ${list}">
+			<!-th:each　配列などを繰り返す->
+				<li th:text="${list}"></li>
+				<!-th:text　文字列を繰り返す->.
+		</ul>
+</body>
+
+</html>
