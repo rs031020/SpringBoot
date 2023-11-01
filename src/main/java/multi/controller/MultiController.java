@@ -25,7 +25,7 @@ public class MultiController { //アノテーションを付与することで�
 
 		result = String.valueOf(multiService.multi(5, 6)); //数値を文字列へ変換
 
-		model.addAttribute("result", result); //controllerとserviceのresultを結びつける
+		model.addAttribute("result", result); //controllerからviewへデータを受け渡す
 
 		return "multi.html"; //HTMLに反映
 	}
