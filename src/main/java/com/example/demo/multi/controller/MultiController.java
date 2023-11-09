@@ -1,12 +1,12 @@
 //パッケージの読み込み
-package multi.controller;
+package com.example.demo.multi.controller;
 
 //外部のアノテーションを読み込み
 import org.springframework.stereotype.Controller; //modelとviewの仲介
 import org.springframework.ui.Model; //データの取得
 import org.springframework.web.bind.annotation.GetMapping; //HTTPリクエストのGETメソッドを受け付ける
 
-import multi.service.MultiService; //serviceファイルのMultiService　ファイルを読み込む
+import com.example.demo.multi.service.MultiService;
 
 @Controller
 public class MultiController { //アノテーションを付与することで、このクラスをcontrollerとして認識する

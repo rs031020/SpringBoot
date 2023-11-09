@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8" />
+	<title>新規登録</title>
+</head>
+
+<body>
+	<h1>引き算</h1>
+	<form oninput="minus" method="get">
+		<input type="number" name="left"> -
+		<input type="number" name="right">
+		<button type="submit">=</button>
+		<p th:text="${result}"></p>
+	</form>
+</body>
+
+</html>

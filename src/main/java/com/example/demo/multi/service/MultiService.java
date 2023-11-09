@@ -1,4 +1,4 @@
-package multi.service;
+package com.example.demo.multi.service;
 
 import org.springframework.stereotype.Service;
 
