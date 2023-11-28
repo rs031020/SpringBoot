@@ -26,7 +26,7 @@ public class CalculatorController {
 	//入力された値を受け取り結果を返す
 	@PostMapping("calculator")
 	//RequestParam　画面で入力した値を受け取り、left変数でその値を受け取る。
-	public String doGet(
+	public String doPost(
 			@RequestParam("left") int left,
 			@RequestParam("right") int right,
 			@RequestParam("calculator") String opelator,

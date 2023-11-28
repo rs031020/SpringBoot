@@ -22,7 +22,7 @@ public class MinusController {
 	}
 
 	@PostMapping("minus")
-	public String doGet(@RequestParam("left") int left, @RequestParam("right") int right, Model model) {
+	public String doPost(@RequestParam("left") int left, @RequestParam("right") int right, Model model) {
 		//RequestParam　画面で入力した値を受け取り、left変数でその値を受け取る。
 		String result = String.valueOf(minusService.minus(left, right));
 		model.addAttribute("result", result);
